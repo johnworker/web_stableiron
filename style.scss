@@ -1,0 +1,62 @@
+// header區
+.header_load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8.75rem;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.933);
+    overflow: hidden;
+
+    .inter_box {
+        display: grid;
+        grid-template-columns: 15% 5% 40% 40%;
+        height: 140px;
+
+        .header_logo {
+            margin: 0 auto;
+            overflow: hidden;
+            height: 140px;
+
+            a {
+                display: inline-block;
+
+                img {
+                    width: 14rem;
+                    position: absolute;
+                }
+            }
+        }
+
+        nav {
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-gap: 10px;
+            justify-content: space-evenly;
+            padding: 0 0 0 80px;
+
+            ul {
+                justify-items: center;
+                list-style-type: none;
+                display: block;
+                overflow: hidden;
+
+                li {
+                    display: block;
+                    padding: 20px 10px;
+
+                    a {
+                        outline: none;
+                        text-decoration: none;
+                        line-height: 5.5;
+                        display: block;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
