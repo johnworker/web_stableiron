@@ -10,7 +10,7 @@
 }
 .header_load .inter_box {
   display: grid;
-  grid-template-columns: 15% 5% 40% 40%;
+  grid-template-columns: 20% 5% 55% 20%;
   height: 140px;
 }
 .header_load .inter_box .header_logo {
@@ -32,7 +32,6 @@
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 10px;
   justify-content: space-evenly;
-  padding: 0 0 0 80px;
 }
 .header_load .inter_box nav ul {
   justify-items: center;
@@ -50,4 +49,8 @@
   line-height: 5.5;
   display: block;
   font-size: 24px;
+  color: white;
+}
+.header_load .inter_box nav ul li a:hover {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */
