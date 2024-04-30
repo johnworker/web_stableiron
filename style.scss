@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微軟正黑體", sans-serif, Arial;
+    // 盒子大小：框線盒子 (規範網頁盒子範圍)
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 // header區
 .header_load {
     position: fixed;
@@ -54,11 +63,174 @@
                         display: block;
                         font-size: 24px;
                         color: white;
+                        text-align: center;
 
-                        &:hover{
+                        &:hover {
                             color: orange;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+// 主要內容區
+.main {
+    display: block;
+
+    .main_one {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+
+        .gray {
+            background: rgba($color: rgb(77, 77, 77), $alpha: 0.7);
+            z-index: 1;
+
+            .gray_img {
+                z-index: 1;
+                position: absolute;
+            }
+
+            img {
+                z-index: -1;
+                position: absolute;
+                width: 1620px;
+            }
+        }
+
+        .promo {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            img {
+                z-index: 1;
+                position: absolute;
+                top: 350px;
+                width: 1500px;
+            }
+        }
+    }
+}
+
+// 倉儲說明區
+.onsite {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    overflow: hidden;
+
+    .pic_box {
+        background: rgb(210, 210, 210);
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .pic_text {
+            width: 100%;
+
+            img {
+                width: 1000px;
+                margin: 50px;
+            }
+        }
+
+        .pic_store {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 0 80px;
+
+            .pic {
+                width: 100%;
+
+                .store_pic {
+                    width: 85%;
+                }
+
+                .info {
+                    width: 100%;
+                    font-size: 36px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+
+// 產品展示區
+.show_product {
+    width: 100%;
+    height: 130vh;
+    overflow: hidden;
+
+    .title {
+        height: auto;
+
+        .title_bg {
+            width: 500px;
+            margin: 40px 150px;
+        }
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        margin: 0 100px;
+
+        .product_pic {
+            width: 100%;
+            height: auto;
+
+            .product_bg {
+                width: 500px;
+                margin: 20px;
+            }
+        }
+
+        .product_info {
+            margin-top: 150px;
+            line-height: 2;
+
+            .info_title {
+                display: flex;
+                flex-direction: row;
+
+                .title {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                .small_text {
+                    font-size: 18px;
+                    justify-items: center;
+                    display: block;
+                    line-height: 5.5;
+                    font-weight: 400;
+                }
+            }
+
+            .content {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            button {
+                border: none;
+                width: 350px;
+                height: 50px;
+                background: #000;
+                margin-top: 50px;
+
+                a{
+                    text-decoration: none;
+                    font-size: 28px;
+                    color: yellow;
+                    font-weight: 900;
+                    padding: 5px 60px;
                 }
             }
         }
