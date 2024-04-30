@@ -197,4 +197,42 @@
   color: yellow;
   font-weight: 900;
   padding: 5px 60px;
+}
+
+footer {
+  background: #000000;
+  margin-top: 100px;
+  padding: 50px;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+footer .logo_info {
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+footer .logo_info .logo_box {
+  width: 100%;
+  overflow: hidden;
+}
+footer .logo_info .logo_box .logo {
+  font-size: 14px;
+  padding: 10px 0;
+  text-decoration: none;
+}
+footer .logo_info .logo_box .logo img {
+  width: 250px;
+}
+footer .logo_info .copy {
+  font-size: 18px;
+  color: white;
+}
+footer .link {
+  padding: 1px 0;
+}
+footer .link a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 5px;
 }/*# sourceMappingURL=style.css.map */

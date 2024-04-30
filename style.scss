@@ -225,7 +225,7 @@
                 background: #000;
                 margin-top: 50px;
 
-                a{
+                a {
                     text-decoration: none;
                     font-size: 28px;
                     color: yellow;
@@ -233,6 +233,51 @@
                     padding: 5px 60px;
                 }
             }
+        }
+    }
+}
+
+// 頁尾區
+footer {
+    background: #000000;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+
+    .logo_info {
+        display: grid;
+        grid-template-rows: 80% 20%;
+        .logo_box {
+            width: 100%;
+            overflow: hidden;
+
+            .logo {
+                font-size: 14px;
+                padding: 10px 0;
+                text-decoration: none;
+
+                img {
+                    width: 250px;
+                }
+            }
+        }
+
+        .copy {
+            font-size: 18px;
+            color: white;
+        }
+    }
+
+    .link {
+        padding: 1px 0;
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            padding: 0 5px;
         }
     }
 }
