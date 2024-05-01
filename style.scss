@@ -241,11 +241,12 @@
 footer {
     background: #000000;
     margin-top: 100px;
-    padding: 50px;
+    padding: 50px 200px;
     text-align: center;
     height: auto;
     width: 100%;
     display: flex;
+    position: relative;
 
     .logo_info {
         display: grid;
@@ -260,7 +261,7 @@ footer {
                 text-decoration: none;
 
                 img {
-                    width: 250px;
+                    width: 350px;
                 }
             }
         }
@@ -271,78 +272,125 @@ footer {
         }
     }
 
-    .info_coda{
+    .info_coda {
         display: flex;
+        position: relative;
+        overflow: hidden;
+        margin-left: 100px;
+        flex-direction: column;
 
-        .aboutwe{
+        &:nth-of-type(1) {
+            flex-grow: 2;
+        }
+
+        &:nth-of-type(2) {
+            flex-grow: 5;
+        }
+
+        &:nth-of-type(3) {
+            flex-grow: 1;
+        }
+
+        .info_minibox{
+            display: flex;
+            flex-direction: row;
+
+            &:nth-of-type(1) {
+                flex-grow: 10;
+            }
+    
+            &:nth-of-type(2) {
+                flex-grow: 1;
+            }
+    
+       
+        .aboutwe {
             height: auto;
+            margin: 0 30px;
 
-            h2{
+            h2 {
                 color: white;
                 text-align: left;
+                text-decoration: underline;
+                text-underline-offset: 5px;
             }
 
-            p{
+            p {
                 color: white;
                 text-align: left;
+                padding: 3px 0;
             }
         }
 
-        .buy_message{
+        .buy_message {
             height: auto;
-            
-            h2{
+            margin: 0 30px;
+
+            h2 {
                 color: white;
                 text-align: left;
+                text-decoration: underline;
+                text-underline-offset: 5px;
             }
 
-            p{
+            p {
                 color: white;
                 text-align: left;
+                padding: 3px 0;
             }
-
         }
 
-        .contactus{
+        .contactus {
             height: auto;
-            
-            h2{
+            margin: 0 30px;
+
+            h2 {
                 color: white;
                 text-align: left;
+                text-decoration: underline;
+                text-underline-offset: 5px;
             }
 
-            p{
+            p {
                 color: white;
                 text-align: left;
+                padding: 3px 0;
             }
-
         }
+    }
 
-        .product_description{
+        .product_description {
             height: auto;
-            
-            h2{
+            margin: 0 30px;
+
+            h2 {
                 color: white;
                 text-align: left;
+                text-decoration: underline;
+                text-underline-offset: 5px;
             }
 
-            a{
+            a {
                 color: white;
                 text-align: left;
                 display: block;
                 text-decoration: none;
+                padding: 3px 0;
             }
-
         }
     }
-    
+
     .link {
         padding: 1px 0;
+    }
 
-        a {
-            text-decoration: none;
-            font-size: 14px;
-            padding: 0 5px;
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0 5px;
+
+        img {
+            width: 35px;
         }
     }
 }
