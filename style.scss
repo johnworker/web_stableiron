@@ -1,4 +1,4 @@
-$tablet: 1024px;                                //平板尺寸 (ipad pro)
+$desk: 1024px;                                //平板尺寸 (ipad pro)
 $tablets: 960px;                                //平板尺寸 (ipad)
 $mobile: 767px;                                 //手機尺寸
 
@@ -25,7 +25,7 @@ $mobile: 767px;                                 //手機尺寸
 
     .inter_box {
         display: grid;
-        grid-template-columns: 20% 5% 55% 20%;
+        grid-template-columns: 25% 5% 65% 5%;
         height: 140px;
 
         .header_logo {
@@ -50,6 +50,16 @@ $mobile: 767px;                                 //手機尺寸
             grid-template-columns: 25% 25% 25% 25%;
             grid-gap: 10px;
             justify-content: space-evenly;
+
+            @media screen and (min-width: $desk) {
+                width: 80%;
+                grid-template-columns: 25% 0 55% 5%;
+            }
+
+            @media screen and (min-width: $tablets) {
+                width: 100%;
+                grid-template-columns: 12% 12% 12% 20%;
+            }
 
             @media screen and (max-width: $tablets) {
                 display: none;
