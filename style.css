@@ -228,6 +228,55 @@ footer .logo_info .copy {
   font-size: 18px;
   color: white;
 }
+footer .info_coda {
+  display: flex;
+}
+footer .info_coda .aboutwe {
+  height: auto;
+}
+footer .info_coda .aboutwe h2 {
+  color: white;
+  text-align: left;
+}
+footer .info_coda .aboutwe p {
+  color: white;
+  text-align: left;
+}
+footer .info_coda .buy_message {
+  height: auto;
+}
+footer .info_coda .buy_message h2 {
+  color: white;
+  text-align: left;
+}
+footer .info_coda .buy_message p {
+  color: white;
+  text-align: left;
+}
+footer .info_coda .contactus {
+  height: auto;
+}
+footer .info_coda .contactus h2 {
+  color: white;
+  text-align: left;
+}
+footer .info_coda .contactus p {
+  color: white;
+  text-align: left;
+}
+footer .info_coda .product_description {
+  height: auto;
+}
+footer .info_coda .product_description h2 {
+  color: white;
+  text-align: left;
+}
+footer .info_coda .product_description a {
+  color: white;
+  text-align: left;
+  display: block;
+  text-decoration: none;
+}
 footer .link {
   padding: 1px 0;
 }
