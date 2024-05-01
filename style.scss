@@ -101,6 +101,10 @@ $color-little_white: rgba(236, 236, 236, 0.9);
             padding: 4rem;
             transition: right 0.3s ease-in-out; // 平滑過渡效果
 
+            @media screen and (min-width: $mobile) {
+                display: none;
+            }    
+
             ul {
                 list-style: none;
                 padding: 0 !important;
@@ -131,6 +135,11 @@ $color-little_white: rgba(236, 236, 236, 0.9);
         .menu_wrap.active {
             right: 0 !important;
             display: block; /* or any visible change */
+
+            @media screen and (min-width: $tablets) {
+                display: none;
+            }    
+
         }
 
         .inter_box {
@@ -183,6 +192,38 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                 list-style-type: none;
                 display: block;
                 overflow: hidden;
+
+                .link_work {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 60px;
+                    vertical-align: 10px;
+                    color: $color-black;
+                    font-size: 24px;
+                    padding: 70px 10px;
+                    color: white;
+                    overflow: hidden;
+                    cursor: pointer;
+                    // height: 300px;
+                    // 滑入後 顯示 裡面的 子分頁元素
+                    &:hover .sub_mini_link{
+                        // display: block; 
+                        transform: scale(1);
+                    }
+                }
+            
+                .sub_mini_link {
+                    // display: none;
+                    // 第二種作法
+                    transform: scale(0);
+                    transition: 1s;
+                    transform-origin: top;
+                    position: absolute;
+                    top: 110px;
+                    right: 15px;
+                    background: $color-little_white;
+                    list-style-type: none;
+                }
 
                 li {
                     display: block;
