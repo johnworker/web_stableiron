@@ -1,5 +1,6 @@
-$big_desk: 1248px;
-$desk: 1024px; //平板尺寸 (ipad pro)
+$very_big_desk: 1330px; //大型電腦尺寸
+$big_desk: 1248px; //中型電腦尺寸
+$desk: 1024px; //小型電腦尺寸 
 $tablets: 960px; //平板尺寸 (ipad)
 $mobile: 767px; //手機尺寸
 
@@ -740,8 +741,12 @@ footer {
                 padding: 1px 0;
                 margin-left: 120px;
 
-                @media screen and (min-width: $big_desk) {
+                @media screen and (min-width: $very_big_desk) {
                     margin-left: 120px;
+                }
+
+                @media screen and (min-width: $big_desk) {
+                    margin-left: 140px;
                 }
 
                 @media screen and (min-width: $tablets) {

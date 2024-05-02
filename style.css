@@ -688,9 +688,14 @@ footer .info_coda .info_linkbox .link {
   padding: 1px 0;
   margin-left: 120px;
 }
-@media screen and (min-width: 1248px) {
+@media screen and (min-width: 1330px) {
   footer .info_coda .info_linkbox .link {
     margin-left: 120px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  footer .info_coda .info_linkbox .link {
+    margin-left: 140px;
   }
 }
 @media screen and (min-width: 960px) {
