@@ -94,11 +94,11 @@ $color-little_white: rgba(236, 236, 236, 0.9);
             position: fixed;
             width: 400px;
             right: -400px;
-            top: 0;
+            top: 140px;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             z-index: 50;
-            padding: 4rem;
+            padding: 0 4rem;
             transition: right 0.3s ease-in-out; // 平滑過渡效果
 
             @media screen and (min-width: $mobile) {
@@ -115,17 +115,18 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                     margin-bottom: 20px;
                     position: relative;
                     z-index: 50;
+                    overflow: hidden;
 
                     a {
-                        font-size: 4rem;
+                        font-size: 2.6rem;
                         padding-bottom: 20px;
-                        color: rgb(100, 100, 100);
+                        color: rgb(255, 255, 255);
                         text-decoration: none;
                         transition: color 0.3s;
                         z-index: 52;
 
                         &:hover {
-                            color: red;
+                            color: yellow;
                         }
                     }
                 }
@@ -180,7 +181,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
             @media screen and (min-width: $tablets) {
                 width: 100%;
-                grid-template-columns: 12% 12% 12% 20%;
+                grid-template-columns: 12% 12% 22%;
             }
 
             @media screen and (max-width: $tablets) {
