@@ -668,11 +668,11 @@ footer .info_coda .info_minibox .contactus p {
 footer .info_coda .info_linkbox {
   display: block;
   width: 200px;
-  margin-left: 420px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 960px) {
   footer .info_coda .info_linkbox {
     display: block;
+    margin-left: 420px;
   }
 }
 @media screen and (max-width: 767px) {
