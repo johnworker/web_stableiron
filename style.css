@@ -186,6 +186,9 @@
 .header_load .big_box nav ul .link_work:hover .sub_mini_link {
   transform: scale(1);
 }
+.header_load .big_box nav ul .link_work:hover {
+  color: orange;
+}
 .header_load .big_box nav ul .sub_mini_link {
   transform: scale(0);
   transition: 1s;
