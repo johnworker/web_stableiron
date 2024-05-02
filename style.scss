@@ -197,7 +197,6 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                 .link_work {
                     position: relative;
                     display: inline-block;
-                    padding: 0 60px;
                     vertical-align: 10px;
                     color: $color-black;
                     font-size: 24px;
@@ -488,7 +487,7 @@ footer {
     position: relative;
 
     @media screen and (min-width: $big_desk) {
-        padding: 50px 100px;
+        padding: 50px 0 50px 100px;
     }
 
     @media screen and (max-width: $mobile) {
@@ -532,6 +531,10 @@ footer {
         margin-left: 100px;
         flex-direction: column;
 
+        @media screen and (min-width: $big_desk) {
+            margin-left: 150px;
+        }    
+
         @media screen and (max-width: $desk) {
             margin-left: 20px;
         }
@@ -571,7 +574,7 @@ footer {
 
             .aboutwe {
                 height: auto;
-                margin: 0 30px;
+                margin: 0 20px;
 
                 @media screen and (max-width: $tablets) {
                     margin: 0 5px;
@@ -607,7 +610,7 @@ footer {
 
             .buy_message {
                 height: auto;
-                margin: 0 30px;
+                margin: 0 20px;
 
                 @media screen and (max-width: $tablets) {
                     margin: 0 5px;

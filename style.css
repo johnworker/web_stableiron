@@ -175,7 +175,6 @@
 .header_load .big_box nav ul .link_work {
   position: relative;
   display: inline-block;
-  padding: 0 60px;
   vertical-align: 10px;
   color: #252525;
   font-size: 24px;
@@ -438,7 +437,7 @@ footer {
 }
 @media screen and (min-width: 1248px) {
   footer {
-    padding: 50px 100px;
+    padding: 50px 0 50px 100px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -479,6 +478,11 @@ footer .info_coda {
   margin-left: 100px;
   flex-direction: column;
 }
+@media screen and (min-width: 1248px) {
+  footer .info_coda {
+    margin-left: 150px;
+  }
+}
 @media screen and (max-width: 1024px) {
   footer .info_coda {
     margin-left: 20px;
@@ -516,7 +520,7 @@ footer .info_coda .info_minibox:nth-of-type(2) {
 }
 footer .info_coda .info_minibox .aboutwe {
   height: auto;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 @media screen and (max-width: 960px) {
   footer .info_coda .info_minibox .aboutwe {
@@ -553,7 +557,7 @@ footer .info_coda .info_minibox .aboutwe p {
 }
 footer .info_coda .info_minibox .buy_message {
   height: auto;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 @media screen and (max-width: 960px) {
   footer .info_coda .info_minibox .buy_message {
