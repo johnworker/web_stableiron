@@ -258,7 +258,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
     .main_one {
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         position: relative;
         overflow: hidden;
 
@@ -275,7 +275,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                 z-index: -1;
                 position: absolute;
                 width: 100%;
-                height: 100vh;
+                height: 100%;
                 object-fit: cover;
             }
         }
@@ -284,11 +284,12 @@ $color-little_white: rgba(236, 236, 236, 0.9);
             position: relative;
             width: 100%;
             height: 100%;
+            overflow: hidden;
 
             img {
                 z-index: 1;
                 position: absolute;
-                top: 550px;
+                top: 350px;
                 width: 100%;
             }
         }
