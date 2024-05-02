@@ -182,7 +182,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
             @media screen and (min-width: $tablets) {
                 width: 100%;
-                grid-template-columns: 12% 12% 22%;
+                grid-template-columns: 22% 22% 22%;
             }
 
             @media screen and (max-width: $tablets) {
@@ -194,6 +194,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                 list-style-type: none;
                 display: block;
                 overflow: hidden;
+                margin: 0 auto;
 
                 .link_work {
                     position: relative;
@@ -225,7 +226,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                     transform-origin: top;
                     position: absolute;
                     top: 110px;
-                    right: 15px;
+                    right: 0;
                     background: $color-little_white;
                     list-style-type: none;
                 }
