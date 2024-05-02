@@ -1,6 +1,6 @@
 $very_big_desk: 1330px; //大型電腦尺寸
 $big_desk: 1248px; //中型電腦尺寸
-$desk: 1024px; //小型電腦尺寸 
+$desk: 1024px; //小型電腦尺寸
 $tablets: 960px; //平板尺寸 (ipad)
 $mobile: 767px; //手機尺寸
 
@@ -57,7 +57,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
             @media screen and (min-width: $tablets) {
                 display: none;
-            }    
+            }
 
             &:hover {
                 background: rgba(255, 255, 255, 0);
@@ -88,7 +88,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
             .active span {
                 background-color: #000; /* changes to indicate active state */
-              }
+            }
         }
 
         .menu_wrap {
@@ -104,7 +104,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
             @media screen and (min-width: $mobile) {
                 display: none;
-            }    
+            }
 
             ul {
                 list-style: none;
@@ -140,12 +140,10 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
             @media screen and (min-width: $tablets) {
                 display: none;
-            }    
-
+            }
         }
 
         .inter_box {
-
             .header_logo {
                 margin: 0 auto;
                 overflow: hidden;
@@ -164,7 +162,6 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                     }
                 }
             }
-
         }
 
         nav {
@@ -208,16 +205,16 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                     cursor: pointer;
                     // height: 300px;
                     // 滑入後 顯示 裡面的 子分頁元素
-                    &:hover .sub_mini_link{
-                        // display: block; 
+                    &:hover .sub_mini_link {
+                        // display: block;
                         transform: scale(1);
                     }
 
-                    &:hover{
+                    &:hover {
                         color: orange;
                     }
                 }
-            
+
                 .sub_mini_link {
                     // display: none;
                     // 第二種作法
@@ -536,7 +533,7 @@ footer {
 
         @media screen and (min-width: $big_desk) {
             margin-left: 150px;
-        }    
+        }
 
         @media screen and (max-width: $desk) {
             margin-left: 0;
@@ -720,7 +717,8 @@ footer {
 
         .info_linkbox {
             display: block;
-            margin: 0 auto;
+            width: 200px;
+            margin-left: 420px;
 
             @media screen and (max-width: $mobile) {
                 display: block;
@@ -728,6 +726,7 @@ footer {
 
             @media screen and (max-width: $mobile) {
                 padding: 10px 0;
+                margin: 0 auto;
             }
 
             &:nth-of-type(1) {
@@ -738,21 +737,12 @@ footer {
                 flex-grow: 1;
             }
 
+            .space_box {
+                height: auto;
+            }
+
             .link {
                 padding: 1px 0;
-                margin-left: 120px;
-
-                @media screen and (min-width: $very_big_desk) {
-                    margin-left: 120px;
-                }
-
-                @media screen and (min-width: $big_desk) {
-                    margin-left: 140px;
-                }
-
-                @media screen and (min-width: $tablets) {
-                    margin-left: 360px;
-                }
 
                 @media screen and (max-width: $tablets) {
                     margin-left: 0;
