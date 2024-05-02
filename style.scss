@@ -717,8 +717,8 @@ footer {
         }
 
         .info_linkbox {
-            display: flex;
-            flex-direction: row;
+            display: block;
+            margin: 0 auto;
 
             @media screen and (max-width: $mobile) {
                 display: block;
@@ -738,10 +738,18 @@ footer {
 
             .link {
                 padding: 1px 0;
-                margin: 0 0 0 175px;
+                margin-left: 120px;
+
+                @media screen and (min-width: $big_desk) {
+                    margin-left: 120px;
+                }
+
+                @media screen and (min-width: $tablets) {
+                    margin-left: 360px;
+                }
 
                 @media screen and (max-width: $tablets) {
-                    margin: 0 0 0 100px;
+                    margin-left: 0;
                 }
 
                 @media screen and (max-width: $mobile) {

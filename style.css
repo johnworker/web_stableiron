@@ -665,8 +665,8 @@ footer .info_coda .info_minibox .contactus p {
   }
 }
 footer .info_coda .info_linkbox {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
   footer .info_coda .info_linkbox {
@@ -686,11 +686,21 @@ footer .info_coda .info_linkbox:nth-of-type(2) {
 }
 footer .info_coda .info_linkbox .link {
   padding: 1px 0;
-  margin: 0 0 0 175px;
+  margin-left: 120px;
+}
+@media screen and (min-width: 1248px) {
+  footer .info_coda .info_linkbox .link {
+    margin-left: 120px;
+  }
+}
+@media screen and (min-width: 960px) {
+  footer .info_coda .info_linkbox .link {
+    margin-left: 360px;
+  }
 }
 @media screen and (max-width: 960px) {
   footer .info_coda .info_linkbox .link {
-    margin: 0 0 0 100px;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 767px) {
