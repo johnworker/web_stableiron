@@ -15,7 +15,6 @@ $color-little_white: rgba(236, 236, 236, 0.9);
     font-family: "微軟正黑體", sans-serif, Arial;
     // 盒子大小：框線盒子 (規範網頁盒子範圍)
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 // header區
@@ -27,7 +26,6 @@ $color-little_white: rgba(236, 236, 236, 0.9);
     height: 8.75rem;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.933);
-    overflow: hidden;
 
     .big_box {
         display: grid;
@@ -179,7 +177,7 @@ $color-little_white: rgba(236, 236, 236, 0.9);
 
             @media screen and (min-width: $tablets) {
                 width: 100%;
-                grid-template-columns: 22% 22% 22%;
+                grid-template-columns: 33% 33% 33%;
             }
 
             @media screen and (max-width: $tablets) {
@@ -190,18 +188,15 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                 justify-items: center;
                 list-style-type: none;
                 display: block;
-                overflow: hidden;
                 margin: 0 auto;
 
                 .link_work {
                     position: relative;
                     display: inline-block;
                     vertical-align: 10px;
-                    color: $color-black;
                     font-size: 24px;
-                    padding: 70px 55px;
+                    padding: 70px 60px;
                     color: white;
-                    overflow: hidden;
                     cursor: pointer;
                     // height: 300px;
                     // 滑入後 顯示 裡面的 子分頁元素
@@ -224,6 +219,8 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                     position: absolute;
                     top: 110px;
                     right: 0;
+                    width: auto;
+                    z-index: 20;
                     background: $color-little_white;
                     list-style-type: none;
                 }
@@ -231,6 +228,10 @@ $color-little_white: rgba(236, 236, 236, 0.9);
                 li {
                     display: block;
                     padding: 20px 10px;
+
+                    .hight{
+                        line-height: 0.8;
+                    }
 
                     a {
                         outline: none;
