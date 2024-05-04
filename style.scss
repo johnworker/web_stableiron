@@ -776,5 +776,20 @@ footer {
 
 // 基礎產品頁面 (product_basic)
 .products{
-    
+    width: 100%;
+    height: 100%;
+
+    .products_content{
+        height: auto;
+
+        .content_box{
+            display: flex;
+            flex-direction: column;
+
+            .mini_box{
+                display: grid;
+                grid-template-columns: 50%;
+            }
+        }
+    }
 }
