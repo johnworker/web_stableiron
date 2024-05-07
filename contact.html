@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>史帝波</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 檔頭區 -->
+    <header class="header_load">
+        <div class="big_box">
+            <div class="inter_box">
+                <h2 class="header_logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="史帝波LOGO">
+                    </a>
+                </h2>
+            </div>
+            <!-- <div class="gavn"></div> -->
+            <nav>
+                <ul>
+                    <li><a href="">關於</a></li>
+                </ul>
+                <ul>
+                    <div class="link_work" href="">商品
+                        <ul class="sub_mini_link">
+                            <li>
+                                <a class="hight" href="">輕型層架</a>
+                            </li>
+                            <li>
+                                <a class="hight" href="">中輕型貨架</a>
+                            </li>
+                            <li>
+                                <a class="hight" href="">重型貨架</a>
+                            </li>
+                            <li>
+                                <a class="hight" href="">閣樓型物料架</a>
+                            </li>
+                            <li>
+                                <a class="hight" href="">推拓行料架</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <li><a href="">聯繫我們</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu">
+                <div class="menu_wrap">
+                    <ul>
+                        <li>
+                            <a href="">關於</a>
+                        </li>
+                        <li>
+                            <a href="">商品</a>
+                        </li>
+                        <li>
+                            <a href="">聯繫我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_btn">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 表單 -->
+    <section class="contact_form">
+        <h2 class="list title-big" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500">聯絡我</h2>
+        <!-- 表單元素 action="" 傳遞給後端頁面，通常是 XXX.php -->
+        <!-- 要設定 input type="submit" 表單資料才會傳到後端-->
+        <!-- 方法：傳送資料的方式 -->
+        <!-- GET 曝光表單資料 -->
+        <!-- POST 不會曝光表單資料 -->
+        <form action="javascript:Goform();">
+            <label for="morning">姓名</label><br>
+            <input type="text" name="name" placeholder="請輸入您的姓名" required>
+            <label for="morning">電話</label><br>
+            <input type="number" name="phone" placeholder="請輸入您的電話" required>
+            <label for="morning">電子郵件</label><br>
+            <input type="email" name="email" placeholder="請輸入您的信箱">
+            <input type="radio" id="morning" name="fav_language" value="早上">
+            <label for="morning">早上</label><br>
+            <input type="radio" id="afternoon" name="fav_language" value="下午">
+            <label for="afternoon">下午</label><br>
+            <textarea placeholder="輸入備註" type="text" name="msg"></textarea>
+            <input type="submit" value="預約" class="btn">
+        </form>
+
+    </section>
+
+    <script>
+        function Goform() {
+            var field1 = $("[name = 'name']").val();
+            var field2 = $("[name = 'phone']").val();
+            var field3 = $("[name = 'email']").val();
+            var field4 = $("[name = 'msg']").val();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc7n9I6SE3wiIDUsNEeKvDQHXnR6Bi1LX-WBx7ztLyaomwSdQ/formResponse",
+                data: {
+                    "entry.75474985": field1,
+                    "entry.1727389538": field2,
+                    "entry.1204764": field3,
+                    "entry.2134462292": field4,
+                },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        alart("完成");
+                    },
+                    200: function () {
+                        alart("完成");
+                    }
+                }
+            });
+        }   
+    </script>
+
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="logo_info">
+            <div class="logo_box">
+                <a href="./index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+            </div>
+            <small class="copy">
+                &copy; stableiron 2024.
+            </small>
+        </div>
+
+        <div class="info_coda">
+            <div class="info_minibox">
+                <div class="aboutwe">
+                    <h2>關於我們</h2>
+                    <p>產品特色</p>
+                    <p>公司簡介</p>
+                    <p>精選案例</p>
+                </div>
+                <div class="product_description">
+                    <h2>產品介紹</h2>
+                    <a href="">輕倉貨架</a>
+                    <a href="">貨架配件</a>
+                </div>
+                <div class="buy_message">
+                    <h2>購買訊息</h2>
+                    <p>DM下載</p>
+                    <p>運費計算</p>
+                    <p>取貨地點</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="contactus">
+                    <h2>聯絡我們</h2>
+                    <p>
+                        週一到週五<br>
+                        09:00-18:00 class="hight"
+                    </p>
+                    <p>
+                        嘉義縣太保市<br>
+                        後潭里第13鄰382號
+                    </p>
+                    <p>Line@:@885vfrlp</p>
+                    <p>
+                        聯絡信箱：<br>
+                        stableshelves@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="info_linkbox">
+                <!-- <div class="space_box_one"></div> -->
+                <div class="link">
+                    <a href=""><img src="./images/line.png" alt=""></a>
+                    <a href=""><img src="./images/FB.png" alt=""></a>
+                    <a href=""><img src="./images/TikTok.png" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
