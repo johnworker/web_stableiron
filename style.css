@@ -176,7 +176,7 @@
   vertical-align: 10px;
   font-size: 24px;
   padding: 70px 60px;
-  color: white;
+  color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
 .header_load .big_box nav ul .link_work:hover .sub_mini_link {
